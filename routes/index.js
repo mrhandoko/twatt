@@ -1,0 +1,14 @@
+var express = require('express')
+var router = express.Router()
+var Controller = require('../controller')
+var OAuth = require('oauth')
+
+/* GET home page. */
+router.get('/', function (req, res, next) {
+  res.render('index', { title: 'Express', api: api})
+})
+
+router.post('/', Controller.getSearch)
+router.get('/timeline', Controller.getTimeline)
+
+module.exports = router
