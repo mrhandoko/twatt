@@ -5,7 +5,7 @@ var OAuth = require('oauth')
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
-  res.render('index', { title: 'Express', api: api})
+  res.render('index', { title: 'Express'})
 })
 
 router.post('/', Controller.getSearch)

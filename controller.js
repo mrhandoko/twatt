@@ -20,7 +20,7 @@ module.exports = {
       'Pddzps9rrfqvzLexLyqSwlgIbHduKbzVUfQTQFyquubsZ', // test user secret
       function (e, data, respond) {
         if (e) console.error(e)
-        res.send(data)
+        res.json(data)
       })
   },
   getTimeline: function (req, res, next) {
@@ -30,7 +30,7 @@ module.exports = {
       'Pddzps9rrfqvzLexLyqSwlgIbHduKbzVUfQTQFyquubsZ', // test user secret
       function (e, data, respond) {
         if (e) console.error(e)
-        res.send(data)
+        res.json(data)
       })
   }
 }
