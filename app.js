@@ -8,6 +8,7 @@ var cors = require('cors')
 
 var index = require('./routes/index')
 var users = require('./routes/users')
+var helpers = require('./helper/api')
 
 var app = express()
 

@@ -10,5 +10,6 @@ router.get('/', function (req, res, next) {
 
 router.post('/', Controller.getSearch)
 router.get('/timeline', Controller.getTimeline)
+router.post('/new', Controller.newTwatt)
 
 module.exports = router
